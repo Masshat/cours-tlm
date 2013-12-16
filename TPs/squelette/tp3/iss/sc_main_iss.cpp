@@ -23,7 +23,7 @@ namespace soclib { namespace common {
 int sc_main(int, char**)
 {
 	MBWrapper cpu("MBWrapper");
-	Memory inst_ram("inst_ram", 0x00002000); // 8Kb
+	Memory inst_ram("inst_ram", 0x00004000); // 16Kb
 	Memory data_ram("data_ram", 0x00100000);
 	Bus bus("bus");
 	TIMER timer("timer", sc_core::sc_time(20, sc_core::SC_NS));
